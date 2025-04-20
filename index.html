@@ -57,6 +57,7 @@
   <!-- Project Section -->
 <div class="w3-container w3-padding-32" id="countries">
   <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">🌍 Countries</h3>
+  <p> Here are almost all the countries that I've visited!</p>
 </div>
 
 <!-- First Row -->
@@ -235,6 +236,12 @@
 <footer class="w3-center w3-black w3-padding-16">
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
-
+<script>
+  document.querySelector("#contact form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Prevent the actual form submission
+    alert("Message received! Thank you for reaching out."); // Show popup
+    this.reset(); // Optional: clears the form fields
+  });
+</script>
 </body>
 </html>
