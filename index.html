@@ -14,9 +14,9 @@
     <a href="#home" class="w3-bar-item w3-button"> Travel the world with <b>Lara</b>  </a>
     <!-- Float links to the right. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="#projects" class="w3-bar-item w3-button">Countries</a>
-      <a href="#about" class="w3-bar-item w3-button">All-Time Favorites</a>
-      <a href="#contact" class="w3-bar-item w3-button">About Me</a>
+      <a href="#countries" class="w3-bar-item w3-button">Countries</a>
+      <a href="#faves" class="w3-bar-item w3-button">All-Time Favorites</a>
+      <a href="#about" class="w3-bar-item w3-button">About Me</a>
     </div>
   </div>
 </div>
@@ -33,7 +33,7 @@
 <div class="w3-content w3-padding" style="max-width:1564px">
 
   <!-- Project Section -->
-<div class="w3-container w3-padding-32" id="projects">
+<div class="w3-container w3-padding-32" id="countries">
   <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Countries</h3>
 </div>
 
@@ -121,27 +121,41 @@
 </div>
 
 <!-- All-Time Favorites Section -->
-<div class="w3-container w3-padding-32" id="favorites">
+<div class="w3-container w3-padding-32" id="faves">
   <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">All-Time Favorites</h3>
+  <p> Click on my all-time faves to learn more or book your next adventure.</p>
 </div>
 
-<!-- Image Carousel -->
-<div class="w3-content w3-display-container" style="max-width:800px; position:relative;">
-  <a href="link1.html" target="_blank">
-    <img class="mySlides" src="image1.jpg" style="width:100%">
-  </a>
-  <a href="link2.html" target="_blank">
-    <img class="mySlides" src="image2.jpg" style="width:100%">
-  </a>
-  <a href="link3.html" target="_blank">
-    <img class="mySlides" src="image3.jpg" style="width:100%">
-  </a>
-  <a href="link4.html" target="_blank">
-    <img class="mySlides" src="image4.jpg" style="width:100%">
-  </a>
-  <a href="link5.html" target="_blank">
-    <img class="mySlides" src="image5.jpg" style="width:100%">
-  </a>
+<!-- Image Carousel (smaller size) -->
+<div class="w3-content w3-display-container" style="max-width:400px; position:relative;">
+  
+  <div class="mySlides w3-display-container">
+    <a href="https://www.grandvalira.com/en" target="_blank">
+      <img src="Skiing in Andorra.jpeg" style="width:100%">
+      <div class="w3-display-topleft w3-black w3-padding">Skiing in Andorra</div>
+    </a>
+  </div>
+
+  <div class="mySlides w3-display-container">
+    <a href="https://www.restohan.net/" target="_blank">
+      <img src="Breakfast in Istanbul.jpeg" style="width:100%">
+      <div class="w3-display-topleft w3-black w3-padding">Breakfast in Istanbul</div>
+    </a>
+  </div>
+
+  <div class="mySlides w3-display-container">
+    <a href="https://www.dubaimiraclegarden.com/" target="_blank">
+      <img src="Garden.jpeg" style="width:100%">
+      <div class="w3-display-topleft w3-black w3-padding">Dubai Miracle Garden</div>
+    </a>
+  </div>
+
+  <div class="mySlides w3-display-container">
+    <a href="https://www.maximobistrot.com.mx/en/" target="_blank">
+      <img src="Restaurant.jpeg" style="width:100%">
+      <div class="w3-display-topleft w3-black w3-padding">Dining out in Mexico City</div>
+    </a>
+  </div>
 
   <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
   <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
