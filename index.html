@@ -120,6 +120,53 @@
   </div>
 </div>
 
+<!-- All-Time Favorites Section -->
+<div class="w3-container w3-padding-32" id="favorites">
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">All-Time Favorites</h3>
+</div>
+
+<!-- Image Carousel -->
+<div class="w3-content w3-display-container" style="max-width:800px; position:relative;">
+  <a href="link1.html" target="_blank">
+    <img class="mySlides" src="image1.jpg" style="width:100%">
+  </a>
+  <a href="link2.html" target="_blank">
+    <img class="mySlides" src="image2.jpg" style="width:100%">
+  </a>
+  <a href="link3.html" target="_blank">
+    <img class="mySlides" src="image3.jpg" style="width:100%">
+  </a>
+  <a href="link4.html" target="_blank">
+    <img class="mySlides" src="image4.jpg" style="width:100%">
+  </a>
+  <a href="link5.html" target="_blank">
+    <img class="mySlides" src="image5.jpg" style="width:100%">
+  </a>
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+<script>
+  let slideIndex = 1;
+  showDivs(slideIndex);
+  
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+  
+  function showDivs(n) {
+    let i;
+    let x = document.getElementsByClassName("mySlides");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    x[slideIndex - 1].style.display = "block";
+  }
+  </script>
+  
+
   <!-- About Section -->
   <div class="w3-container w3-padding-32" id="about">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Me</h3>
