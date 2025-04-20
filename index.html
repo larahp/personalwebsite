@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Found this code from W3 Schools and tweaked it using my own knowledge and ChatGPT-->
+   <!-- Here's the W3 main link https://www.w3schools.com/css/css_rwd_templates.asp, option used was this one https://www.w3schools.com/w3css/tryw3css_templates_architect.htm -->
 <title>Lara's Travel Blog </title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,23 +10,24 @@
 </head>
 <body>
 
-<!-- Navbar (sit on top) -->
+  
+<!-- Navbar: originally started with the W3 one and then tweaked it for mobile using ChatGPT-->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
     <a href="#home" class="w3-bar-item w3-button">Travel the world with <b>Lara</b></a>
 
-    <!-- Normal menu for large screens -->
+    <!-- Normal menu for larger screens -->
     <div class="w3-right w3-hide-small">
       <a href="#countries" class="w3-bar-item w3-button">Countries</a>
       <a href="#faves" class="w3-bar-item w3-button">All-Time Favorites</a>
       <a href="#about" class="w3-bar-item w3-button">About Me</a>
     </div>
 
-    <!-- Hamburger icon (visible on small screens) -->
+    <!-- Tweaked with support from AI: Hamburger icon (visible on small screens) -->
     <a href="javascript:void(0);" class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large" onclick="toggleMenu()">☰</a>
   </div>
 
-  <!-- Hidden menu that appears on mobile -->
+  <!-- Tweaked with support from AI, Javascript inclusion: Hidden menu that appears on mobile -->
   <div id="mobileNav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
     <a href="#countries" class="w3-bar-item w3-button">Countries</a>
     <a href="#faves" class="w3-bar-item w3-button">All-Time Favorites</a>
@@ -45,7 +48,7 @@
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
-  <img class="w3-image" src="auabr-cabanas-2772-hor-wide.avif" alt="Architecture" width="1500" height="800">
+  <img class="w3-image" src="auabr-cabanas-2772-hor-wide.avif" alt="Lara" width="1500" height="800">
   <div class="w3-display-middle w3-margin-top w3-center">
     <h1 class="w3-xxlarge w3-text-white"><span class="w3-padding w3-black w3-opacity-min"><b>Explore the world with me!</b></span> </h1>
   </div>
@@ -54,13 +57,13 @@
 <!-- Page content -->
 <div class="w3-content w3-padding" style="max-width:1564px">
 
-  <!-- Project Section -->
+  <!-- Countries Section -->
 <div class="w3-container w3-padding-32" id="countries">
   <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">🌍 Countries</h3>
   <p> Here are almost all the countries that I've visited!</p>
 </div>
 
-<!-- First Row -->
+<!-- First Row of Countries -->
 <div class="w3-row-padding">
   <div class="w3-col l3 m6 w3-margin-bottom">
     <div class="w3-display-container">
@@ -88,7 +91,7 @@
   </div>
 </div>
 
-<!-- Second Row -->
+<!-- Second Row of Countries (tweaked with support from ChatGPT)-->
 <div class="w3-row-padding">
   <div class="w3-col l3 m6 w3-margin-bottom">
     <div class="w3-display-container">
@@ -115,7 +118,7 @@
     </div>
   </div>
 </div>
-<!-- Third Row -->
+<!-- Third Row: similar to above, tweaked with support from ChatGPT -->
 <div class="w3-row-padding">
   <div class="w3-col l3 m6 w3-margin-bottom">
     <div class="w3-display-container">
@@ -143,13 +146,13 @@
   </div>
 </div>
 
-<!-- All-Time Favorites Section -->
+<!-- All-Time Favorites Section: Created on my own -->
 <div class="w3-container w3-padding-32" id="faves">
   <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">⭐ All-Time Favorites</h3>
   <p> Click on my all-time faves to learn more or book your next adventure.</p>
 </div>
 
-<!-- Image Carousel (smaller size) -->
+<!-- Clickable Image Carousel: Created with ChatGPT, tweaked multiple times, Javascript inclusion-->
 <div class="w3-content w3-display-container" style="max-width:400px; position:relative;">
   
   <div class="mySlides w3-display-container">
@@ -204,7 +207,7 @@
   </script>
   
 
-  <!-- About Section -->
+  <!-- About Me Section: Kept W3 version and made minor tweaks on my own -->
   <div class="w3-container w3-padding-32" id="about">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">👩🏽‍💻 About Me</h3>
     <p>Hi, I'm Lara! I'm passionate about coding and absolutely love to travel. Combining those two loves, I created this site to showcase the countries I've visited through a developer's lens. From the vibrant streets of Mexico to the modern marvels of the UAE, every destination has inspired me in its own unique way. Whether I'm debugging a project or planning my next trip, I'm always up for a new adventure. Thanks for stopping by and exploring the world with me! Here are a few quick facts about my travels: </p>
@@ -217,7 +220,7 @@
     </ul>
   </div>
 
-  <!-- Contact Section -->
+  <!-- Contact Section: Added a prompt / response with support from ChatGPT once visitors click on button (with script below at end) -->
   <div class="w3-container w3-padding-32" id="contact">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">💬 Contact Lara</h3>
     <p>Let's get in touch and talk about your next vacation.</p>
