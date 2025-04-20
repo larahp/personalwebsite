@@ -11,15 +11,37 @@
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
   <div class="w3-bar w3-white w3-wide w3-padding w3-card">
-    <a href="#home" class="w3-bar-item w3-button"> Travel the world with <b>Lara</b>  </a>
-    <!-- Float links to the right. Hide them on small screens -->
+    <a href="#home" class="w3-bar-item w3-button">Travel the world with <b>Lara</b></a>
+
+    <!-- Normal menu for large screens -->
     <div class="w3-right w3-hide-small">
       <a href="#countries" class="w3-bar-item w3-button">Countries</a>
       <a href="#faves" class="w3-bar-item w3-button">All-Time Favorites</a>
       <a href="#about" class="w3-bar-item w3-button">About Me</a>
     </div>
+
+    <!-- Hamburger icon (visible on small screens) -->
+    <a href="javascript:void(0);" class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large" onclick="toggleMenu()">☰</a>
+  </div>
+
+  <!-- Hidden menu that appears on mobile -->
+  <div id="mobileNav" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#countries" class="w3-bar-item w3-button">Countries</a>
+    <a href="#faves" class="w3-bar-item w3-button">All-Time Favorites</a>
+    <a href="#about" class="w3-bar-item w3-button">About Me</a>
   </div>
 </div>
+
+<script>
+  function toggleMenu() {
+    var x = document.getElementById("mobileNav");
+    if (x.className.indexOf("w3-show") == -1) {
+      x.className += " w3-show";
+    } else { 
+      x.className = x.className.replace(" w3-show", "");
+    }
+  }
+  </script>
 
 <!-- Header -->
 <header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
@@ -34,7 +56,7 @@
 
   <!-- Project Section -->
 <div class="w3-container w3-padding-32" id="countries">
-  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Countries</h3>
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">🌍 Countries</h3>
 </div>
 
 <!-- First Row -->
@@ -122,7 +144,7 @@
 
 <!-- All-Time Favorites Section -->
 <div class="w3-container w3-padding-32" id="faves">
-  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">All-Time Favorites</h3>
+  <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">⭐ All-Time Favorites</h3>
   <p> Click on my all-time faves to learn more or book your next adventure.</p>
 </div>
 
@@ -183,13 +205,20 @@
 
   <!-- About Section -->
   <div class="w3-container w3-padding-32" id="about">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About Me</h3>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">👩🏽‍💻 About Me</h3>
     <p>Hi, I'm Lara! I'm passionate about coding and absolutely love to travel. Combining those two loves, I created this site to showcase the countries I've visited through a developer's lens. From the vibrant streets of Mexico to the modern marvels of the UAE, every destination has inspired me in its own unique way. Whether I'm debugging a project or planning my next trip, I'm always up for a new adventure. Thanks for stopping by and exploring the world with me!. </p>
+    <ul class="w3-ul w3-margin-top">
+      <li>🏖️ Visited 18 countries (and counting!)</li>
+      <li>💻 Built my first travel app while backpacking through Southeast Asia</li>
+      <li>📸 Favorite city for street photography: Tokyo</li>
+      <li>✈️ Once booked a spontaneous trip 12 hours before the flight</li>
+      <li>🎒 Always travel with my laptop, journal, and a pack of postcards</li>
+    </ul>
   </div>
 
   <!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="contact">
-    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Contact Lara</h3>
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">💬 Contact Lara</h3>
     <p>Let's get in touch and talk about your next vacation.</p>
     <form action="/action_page.php" target="_blank">
       <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
